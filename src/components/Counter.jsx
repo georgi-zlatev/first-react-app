@@ -7,12 +7,19 @@ export default function Counter(props) {
     setCount(count + 1);
   };
 
+  const counterResetHandler = () => {
+    setCount(0);
+  };
+
   return (
     <div>
       <h3>Counter</h3>
 
       <p>Count: {count}</p>
 
+      {/* Inline function for deduction */}
+      <button onClick={() => setCount(count - 1)}>-</button>
+      <button onClick={counterResetHandler}>Reset</button>
       <button onClick={incrementClickHandler}>+</button>
     </div>
   );
