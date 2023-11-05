@@ -14,6 +14,8 @@ function App() {
       <Timer startTime={7}/>
 
       <MovieList movies={movies} headingText="The Movie List"/>
+
+      {/* Here I add a comment to test the commit function */}
     </div>
   );
 }
