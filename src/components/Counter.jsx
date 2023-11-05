@@ -4,7 +4,7 @@ export default function Counter(props) {
   const [count, setCount] = useState(0);
 
   const incrementClickHandler = () => {
-    setCount(count + 1);
+    setCount(oldValue => oldValue + 1);
   };
 
   const counterResetHandler = () => {
